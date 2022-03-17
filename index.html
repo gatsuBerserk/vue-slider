@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="col-12 p-5">
-                    <div class="my-carousel-container d-flex flex-column px-5">
+                    <div class="my-carousel-container d-flex flex-column px-5" >
                         <div class="my-carousel-images"> 
                              <!--aggiungiamo la classe active con v-bind   -->
                             <div class="position-relative my-none"v-for=" (element, index) in multimedia" :class="(index === activeElements) ? 'active' : '' "  > 
@@ -48,9 +48,9 @@
                             <!-- immagini -->  
                         </div>
                         <div class="my-thumbnails position-relative"> 
-                            <img class="dom-preview" :src="element.image" alt="" v-for="(element, index) in multimedia" :class="(index === activeElements) ? 'filter' : '' ">
+                            <img class="dom-preview" :src="element.image" alt="" v-for="(element, index) in multimedia" :class="(index === activeElements) ? 'filter' : '' " @click="mouseChange(index)">
                             <!-- prev -->
-                            <div class="my-previous position-absolute" @click="prevImg()">
+                            <div class="my-previous position-absolute" @click="prevImg()"  @mouseleaves="Scroll()" >
                                 <span class="my-prev-hook"></span>
                             </div>
                             <!-- immagini interne -->
