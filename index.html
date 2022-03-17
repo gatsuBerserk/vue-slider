@@ -31,20 +31,24 @@
         <div class="container-fluid p-5">
             <div class="row text-center">
                 <div class="col-12 p-3" id="my-before-carousel">
-
+                    <h1>{{title}}</h1>
                 </div>
 
                 <div class="col-12 p-5">
                     <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel">
-                        <div class="my-carousel-images"> 
-                            <div v-for="element in multimedia">
-                                 
-                                        <h2>{{ element.name }}</h2>
-                                  
+                        <div class="my-carousel-images" > 
+                            <div class="position-relative"v-for=" element in multimedia"> 
+                                <!-- aggiungo un'immagine di prova -->
+                                <img class="my-img " :src="element.image" :alt="element.title">
+                                <div class="position-absolute bottom-0 end-0 me-4 mb-5 text-white"> 
+                                    <h2>{{element.name}}</h2> 
+                                    <h3>{{element.description}}</h3>
+                                </div>
                             </div> 
                             <!-- immagini -->  
                         </div>
-                        <div class="my-thumbnails position-relative">
+                        <div class="my-thumbnails position-relative"> 
+                            <img class="dom-preview" :src="element.image" alt="" v-for="element in multimedia">
                             <!-- prev -->
                             <div class="my-previous position-absolute">
                                 <span class="my-prev-hook"></span>

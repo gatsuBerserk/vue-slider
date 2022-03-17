@@ -2,37 +2,38 @@
 const app = new Vue({
     el : "#app",  
     data : { 
+        title : "New Carousel", 
         multimedia : [
             {
                 name : "Four elements",
                 description : "Life",
-                image : "146108.jpg", 
+                image : "img/146108.jpg", 
         
             },
         
             {
-                name : "Color",
-                descrizione : "Beautiful",
-                image : "271342.jpg",
+                name : "Anchestor",
+                description : "Beautiful",
+                image : "img/sculpture_starry_sky_stone_123440_3840x2160.jpg",
             },
         
             {
                 name : "Nature",
                 description : "We respect",
-                image : "nature-5325442_960_720.jpg", 
+                image : "img/nature-5325442_960_720.jpg", 
                 
             },
         
             {
                 name : "Reflect",
                 description: "Moments",
-                image : "pexels-photo-1323550.jpeg",
+                image : "img/pexels-photo-1323550.jpeg",
             },
         
             {
                 name : "Island in the sky",
                 description: "Sky and sea merge",
-                image : "sunset-3087145_960_720.jpg",
+                image : "img/sunset-3087145_960_720.jpg",
             },
         
         ]
@@ -44,10 +45,10 @@ const app = new Vue({
 
 
 // const title = document.getElementById("my-before-carousel");  
-// title.innerHTML=`<h1> GO VEGAN  <h1>`;  
-// const photo = document.querySelector("div.my-carousel-images"); 
-// const preview = document.querySelector("div.my-thumbnails"); 
-// for(let i = 0; i <multimedia.length; i++){ 
+// title.innerHTML=`<h1> GO VEGAN  <h1>`;  done
+// const photo = document.querySelector("div.my-carousel-images"); done 
+// const preview = document.querySelector("div.my-thumbnails"); done
+// for(let i = 0; i <multimedia.length; i++){                   done
     
 //     photo.innerHTML+=
 //     `
