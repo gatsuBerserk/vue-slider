@@ -1,8 +1,11 @@
 
-const app = new Vue({
+const app = new Vue(
+    {
     el : "#app",  
     data : { 
-        title : "New Carousel", 
+        title : "New Carousel",
+        // contatore 
+        activeElements : 0,  
         multimedia : [
             {
                 name : "Four elements",
@@ -39,30 +42,28 @@ const app = new Vue({
         ]
 
     }, 
-}
-  
-);
+    methods : {
+        nextImg: function(){
+            if( this.activeElements === this.multimedia.length -1){
+                this.activeElements= 0;
+            }else{
+                this.activeElements++;
+            }
+                    
+        }, 
+        prevImg : function(){
+            if(this.activeElements === 0){
+                this.activeElements= this.multimedia.length -1; 
+            }else{
+                this.activeElements--;
+            }; 
+        },  
 
+    }
+} 
+)
 
-// const title = document.getElementById("my-before-carousel");  
-// title.innerHTML=`<h1> GO VEGAN  <h1>`;  done
-// const photo = document.querySelector("div.my-carousel-images"); done 
-// const preview = document.querySelector("div.my-thumbnails"); done
-// for(let i = 0; i <multimedia.length; i++){                   done
-    
-//     photo.innerHTML+=
-//     `
-//     <img class="my-img" src="img/${multimedia[i].image}" alt="${multimedia[i].name}"> 
-//     `;  
-    
-//     preview.innerHTML += 
-//     `
-    
-//     <img class="dom-preview" src="img/${multimedia[i].image}" alt="${multimedia[i].nome}">
-//     `; 
-// } 
-
-// let activeElement= 0;
+// let activeElement= 0; done
 // document.getElementsByClassName("my-img")[activeElement].classList.add("active");
 // document.getElementsByClassName("dom-preview")[activeElement].classList.add("filter"); 
 

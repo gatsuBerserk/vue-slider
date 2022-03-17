@@ -57,14 +57,20 @@ div.my-next > span::after{
 .my-img{ 
 width: 100%;
  height: 800px; 
- display: none;
+
    
 }  
+
+.my-none{
+    display: none;
+}
 
 .dom-preview{
     width: calc(100% / 5);
     
-}
+} 
+ 
+
 
 .active{
     display: block;
