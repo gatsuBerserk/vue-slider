@@ -1,43 +1,43 @@
 
 const app = new Vue({
     el : "#app",  
-    // data : { 
-    //     multimedia : [
-    //         {
-    //             name : "Four elements",
-    //             description : "Life",
-    //             image : "146108.jpg", 
+    data : { 
+        multimedia : [
+            {
+                name : "Four elements",
+                description : "Life",
+                image : "146108.jpg", 
         
-    //         },
+            },
         
-    //         {
-    //             name : "Color",
-    //             descrizione : "Beautiful",
-    //             image : "271342.jpg",
-    //         },
+            {
+                name : "Color",
+                descrizione : "Beautiful",
+                image : "271342.jpg",
+            },
         
-    //         {
-    //             name : "Nature",
-    //             description : "We respect",
-    //             image : "nature-5325442_960_720.jpg", 
+            {
+                name : "Nature",
+                description : "We respect",
+                image : "nature-5325442_960_720.jpg", 
                 
-    //         },
+            },
         
-    //         {
-    //             name : "Reflect",
-    //             description: "Moments",
-    //             image : "pexels-photo-1323550.jpeg",
-    //         },
+            {
+                name : "Reflect",
+                description: "Moments",
+                image : "pexels-photo-1323550.jpeg",
+            },
         
-    //         {
-    //             name : "Island in the sky",
-    //             description: "Sky and sea merge",
-    //             image : "sunset-3087145_960_720.jpg",
-    //         },
+            {
+                name : "Island in the sky",
+                description: "Sky and sea merge",
+                image : "sunset-3087145_960_720.jpg",
+            },
         
-    //     ]
+        ]
 
-    // }, 
+    }, 
 }
   
 );
